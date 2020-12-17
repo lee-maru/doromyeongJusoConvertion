@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="724.0" style="-fx-background-color: #39A67F;" />
+      <AnchorPane layoutX="65.0" layoutY="50.0" prefHeight="82.0" prefWidth="594.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="excelPath" layoutX="84.0" layoutY="41.0" prefHeight="26.0" prefWidth="303.0" />
+            <Button layoutX="526.0" layoutY="28.0" minHeight="18.0" mnemonicParsing="false" onAction="#chooseWritePath" prefHeight="26.0" prefWidth="54.0" text="찾기" textFill="#2f2f2f" />
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="18.0" prefWidth="415.0" text="어떤 파일을 이용하실 건가요? .xls 파일만 가능합니다. " />
+            <Label layoutX="14.0" layoutY="41.0" prefHeight="26.0" prefWidth="79.0" text="파일 경로" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="206.0" prefHeight="40.0" prefWidth="359.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" text="몇번 째 열에 지번 주소가 있습니가?" />
+            <TextField fx:id="jibunRow" layoutX="248.0" layoutY="7.0" prefHeight="26.0" prefWidth="99.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="255.0" prefHeight="40.0" prefWidth="359.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" text="몇번 째 열에 도로명 주소를 넣을까요?" />
+            <TextField fx:id="doroRow" layoutX="246.0" layoutY="7.0" prefHeight="26.0" prefWidth="99.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="143.0" prefHeight="40.0" prefWidth="594.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" text="실행된 파일을 어디에 저장할까요?" />
+            <Button layoutX="526.0" layoutY="6.0" minHeight="18.0" mnemonicParsing="false" onAction="#choosePath" prefHeight="26.0" prefWidth="54.0" text="찾기" textFill="#2f2f2f" />
+            <Label fx:id="resultPATH" layoutX="243.0" layoutY="5.0" prefHeight="26.0" prefWidth="269.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn" layoutX="542.0" layoutY="237.0" mnemonicParsing="false" onAction="#excute" prefHeight="58.0" prefWidth="117.0" style="-fx-background-color: #39A67F;" text="실행" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <AnchorPane layoutX="65.0" layoutY="302.0" prefHeight="40.0" prefWidth="401.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="6.0" layoutY="11.0" prefHeight="18.0" prefWidth="316.0" text="몇번째 열까지 진행할까요? 시작은 0번째 부터" />
+            <TextField fx:id="maxNum" layoutX="291.0" layoutY="7.0" prefHeight="26.0" prefWidth="99.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="65.0" layoutY="352.0" prefHeight="33.0" prefWidth="584.0" text="실행한뒤 프로그램이 응답이 없다면, 시간이 오래걸리는 것이고, 프로그램이 정상 작동 중입니다. " />
+      <Label layoutX="65.0" layoutY="385.0" prefHeight="33.0" prefWidth="584.0" text="문의 사항 : uffortune@gmail.com " />
+   </children>
+</AnchorPane>
