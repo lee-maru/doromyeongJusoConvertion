@@ -1,4 +1,6 @@
 # [:computer:]지번주소를 도로명 주소로
+### [test code](https://github.com/lee-maru/doromyeongJusoConvertion/tree/master/TestCode)
+### [src main code](https://github.com/lee-maru/doromyeongJusoConvertion/tree/master/ExcelJavaFx/src/sample)
 
 ## 요구사항
 ### 1. 엑셀 파일을 읽어서, 지번 주소를 도로명 주소로 변환할 수 있어야 한다. 
